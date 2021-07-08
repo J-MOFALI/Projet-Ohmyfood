@@ -1,12 +1,8 @@
 .header {
   text-align: center;
   font-family: "shirkand" sans-serif;
-  height: 60px;
-  padding: 20px 0px 20px 0px;
-}
-.header img {
-  width: 100%;
-  height: 30px;
+  height: 20px;
+  padding: 10px 0px 20px 0px;
 }
 
 .header_resto {
@@ -25,6 +21,404 @@
   position: absolute;
   top: 35%;
   left: 4%;
+}
+
+footer {
+  display: flex;
+  background-color: #353535;
+  color: white;
+  padding-left: 45px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 120px;
+  }
+}
+footer ul {
+  list-style: none;
+  margin: 0px 0px 20px -35px;
+}
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+footer ul i {
+  padding-right: 10px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3f3f3;
+  font-family: "Roboto" sans-serif;
+}
+.explore__text1 {
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+.explore__text2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+.explore__btn {
+  text-align: center;
+  margin: 20px 0px 40px 0px;
+  border: 1px solid #FF79DA;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #FF79DA;
+  color: white;
+}
+
+.plan {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.plan i {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .running {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+.running h1 {
+  margin-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .running h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.running .btn {
+  display: flex;
+  flex-direction: columns;
+  align-content: center;
+  width: 300px;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  color: white;
+  position: relative;
+  margin: 0px 0px 20px 30px;
+}
+@media screen and (min-width: 768px) {
+  .running .btn {
+    width: 25%;
+    margin: auto;
+  }
+}
+.running .btn__figure {
+  border-radius: 51%;
+  background-color: #9356DC;
+  padding: 10px;
+  position: absolute;
+  left: -10px;
+  bottom: 20%;
+}
+.running .btn__icon {
+  margin: 0px 20px 0px 20px;
+  width: 10px;
+  height: 10px;
+  color: grey;
+}
+.running .btn__icon--lighten {
+  margin: 0px 20px 0px 20px;
+  width: 10px;
+  height: 10px;
+  color: #9356DC;
+}
+.running .btn__text {
+  color: black;
+}
+
+.restaurant {
+  display: flex;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.restaurant h1 {
+  padding: 20px 0px 0px 35px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.restaurant .picture {
+  position: relative;
+  width: 350px;
+  margin: 10px 0px 30px 35px;
+  height: 200px;
+  box-shadow: 10px 10px 15px #F2F2F2;
+  color: black;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .picture {
+    width: 80%;
+    height: 500px;
+    margin: 0px 10% 40px 10%;
+  }
+}
+.restaurant .picture__chiche {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurant .picture__new {
+  padding: 5px;
+  color: #99E2D0;
+  background-color: #c1ede2;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .picture__new {
+    top: 5%;
+    right: 5%;
+    width: 20%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+  }
+}
+.restaurant .picture__description {
+  position: absolute;
+  bottom: 0px;
+  height: 35%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  margin: 0px;
+}
+.restaurant .picture__description h2 {
+  margin: 10px 0px 0px 10px;
+}
+.restaurant .picture__description p {
+  margin: 0px 0px 0px 10px;
+}
+.restaurant .picture__description__coeur {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 1480px;
+}
+.main .picture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .main .picture {
+    height: 120px;
+    width: 99.5%;
+    margin-left: 0.25%;
+  }
+}
+.main .menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1300px;
+  background-color: #f3f3f3;
+  border-radius: 40px 40px 0px 0px;
+  position: absolute;
+  bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.main .menu h1 {
+  margin: 30px 0px 0px 40px;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .main .menu h1 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+  }
+}
+.main .menu h1 i {
+  position: absolute;
+  right: 40px;
+  top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu h1 i {
+    right: 530px;
+    top: 32px;
+  }
+}
+.main .menu .starter {
+  margin: 10px 0px 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .starter {
+    width: 30%;
+    height: 60%;
+    margin: 1.5%;
+  }
+}
+.main .menu .starter__object {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 20px 0px 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+.main .menu .starter__object .h3 {
+  margin: 10px 0px 10px 10px;
+}
+.main .menu .starter__object .p {
+  margin: 0px 0px 10px 10px;
+}
+.main .menu .starter__object .p strong {
+  position: absolute;
+  right: 10px;
+}
+.main .menu .mainmeal {
+  margin: 10px 0px 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal {
+    width: 30%;
+    height: 60%;
+    margin: 1.5%;
+  }
+}
+.main .menu .mainmeal__object {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 20px 0px 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+.main .menu .mainmeal__object .h3 {
+  margin: 10px 0px 10px 10px;
+}
+.main .menu .mainmeal__object .p {
+  margin: 0px 0px 10px 10px;
+}
+.main .menu .mainmeal__object .p strong {
+  position: absolute;
+  right: 10px;
+}
+.main .menu .dessert {
+  margin: 10px 0px 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .dessert {
+    width: 30%;
+    height: 60%;
+    margin: 1.5%;
+  }
+}
+.main .menu .dessert__object {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 20px 0px 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+.main .menu .dessert__object .h3 {
+  margin: 10px 0px 10px 10px;
+}
+.main .menu .dessert__object .p {
+  margin: 0px 0px 10px 10px;
+}
+.main .menu .dessert__object .p strong {
+  position: absolute;
+  right: 10px;
+}
+.main .menu .order {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+  color: white;
+  background-color: #FF79DA;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  margin: 40px 0px 40px 140px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .order {
+    width: 100%;
+    text-align: center;
+    width: 60%;
+    margin: 2% 20% 4% 20%;
+    padding: 2% 0% 2% 27%;
+  }
+}
+
+body {
+  margin: auto;
+  max-width: 1500px;
+  margin: auto;
+  max-width: 1500px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

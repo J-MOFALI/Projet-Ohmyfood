@@ -1,4 +1,9 @@
-@import "./Layout/header.scss";
-@import "./Util/variables.scss",
-"./Util/maps.scss",
+@import "./Util/maps.scss",
 "./Util/mixins.scss";
+@import "./Layout/header.scss",
+"./Layout/footer.scss",
+"./Layout/explore.scss",
+"./Layout/running.scss",
+"./Layout/restaurant.scss",
+"./Layout/resto.scss",
+"./Layout/body.scss";
