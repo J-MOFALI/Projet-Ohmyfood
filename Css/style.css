@@ -35,6 +35,9 @@ footer {
     padding-left: 120px;
   }
 }
+footer h1 {
+  font-family: "Shrikhand", sans-serif;
+}
 footer ul {
   list-style: none;
   margin: 0px 0px 20px -35px;
@@ -53,25 +56,24 @@ footer ul i {
   align-items: center;
   padding: 10px;
   background-color: #f3f3f3;
-  font-family: "Roboto" sans-serif;
 }
 .explore__text1 {
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.3rem;
   text-align: center;
   margin: 10px 0px 10px 0px;
 }
 .explore__text2 {
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   margin: 10px 0px 10px 0px;
 }
 .explore__btn {
   text-align: center;
   margin: 20px 0px 40px 0px;
-  border: 1px solid #FF79DA;
   border-radius: 25px;
-  padding: 10px;
-  background-color: #FF79DA;
+  padding: 20px 15px 20px 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
 
@@ -95,7 +97,7 @@ footer ul i {
   }
 }
 .running h1 {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 @media screen and (min-width: 768px) {
   .running h1 {
@@ -107,14 +109,15 @@ footer ul i {
   display: flex;
   flex-direction: columns;
   align-content: center;
-  width: 300px;
-  border: 1px solid #f3f3f3;
+  width: 270px;
+  border: 1px solid #eeeeee;
   border-radius: 20px;
   padding: 20px;
   background-color: #f3f3f3;
   color: white;
   position: relative;
   margin: 0px 0px 20px 30px;
+  box-shadow: 10px 5px 15px #eeeeee;
 }
 @media screen and (min-width: 768px) {
   .running .btn {
@@ -123,27 +126,34 @@ footer ul i {
   }
 }
 .running .btn__figure {
-  border-radius: 51%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 0.8rem;
+  padding: 5px 5px 5px 6.5px;
+  border-radius: 50%;
   background-color: #9356DC;
-  padding: 10px;
   position: absolute;
   left: -10px;
-  bottom: 20%;
+  bottom: 33%;
+  width: 10px;
+  height: 10px;
 }
 .running .btn__icon {
   margin: 0px 20px 0px 20px;
-  width: 10px;
-  height: 10px;
-  color: grey;
+  width: 15px;
+  height: 20px;
+  color: #676767;
 }
 .running .btn__icon--lighten {
   margin: 0px 20px 0px 20px;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 20px;
   color: #9356DC;
 }
 .running .btn__text {
   color: black;
+  font-weight: 400;
 }
 
 .restaurant {
@@ -172,7 +182,7 @@ footer ul i {
 }
 .restaurant .picture {
   position: relative;
-  width: 350px;
+  width: 300px;
   margin: 10px 0px 30px 35px;
   height: 200px;
   box-shadow: 10px 10px 15px #F2F2F2;
@@ -418,7 +428,8 @@ body {
 
 h1,
 h2 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

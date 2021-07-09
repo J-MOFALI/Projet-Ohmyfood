@@ -4,24 +4,23 @@
     align-items: center;
     padding: 10px;
     background-color: lighten(grey, 45);
-    font-family: "Roboto" sans-serif;
     &__text1 {
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 1.3rem;
         text-align: center;
         margin: 10px 0px 10px 0px;
     }
     &__text2 {
-        font-weight: 500;
+        font-weight: 300;
         text-align: center;
         margin: 10px 0px 10px 0px;
     }
     &__btn {
         text-align: center;
         margin: 20px 0px 40px 0px;
-        border: 1px solid #FF79DA;
         border-radius: 25px;
-        padding: 10px;
-        background-color: #FF79DA;
+        padding: 20px 15px 20px 15px;
+        background: linear-gradient(#FF79DA, #9356DC);
         color: white;
     }
 }
