@@ -13,14 +13,19 @@
   align-items: center;
 }
 .header_resto img {
-  width: 100%;
+  position: absolute;
+  top: 24%;
+  right: 6%;
+  width: 90%;
   height: 30px;
 }
 .header_resto i {
   color: black;
   position: absolute;
   top: 35%;
-  left: 4%;
+  left: 6%;
+  width: 40px;
+  height: 30px;
 }
 
 footer {
@@ -279,20 +284,24 @@ footer ul i {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 40px;
+  height: 20%;
+}
+.main .picture img {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .main .picture {
-    height: 120px;
-    width: 99.5%;
-    margin-left: 0.25%;
+    width: 100%;
+    height: 20%;
+    margin-left: 0px;
   }
 }
 .main .menu {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1300px;
+  height: 83%;
   background-color: #f3f3f3;
   border-radius: 40px 40px 0px 0px;
   position: absolute;
@@ -306,8 +315,10 @@ footer ul i {
   }
 }
 .main .menu h1 {
-  margin: 30px 0px 0px 40px;
+  margin: 30px 0px 0px 20px;
   width: 80%;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .main .menu h1 {
@@ -318,8 +329,8 @@ footer ul i {
 }
 .main .menu h1 i {
   position: absolute;
-  right: 40px;
-  top: 32px;
+  right: 30px;
+  top: 34px;
 }
 @media screen and (min-width: 768px) {
   .main .menu h1 i {
@@ -337,25 +348,35 @@ footer ul i {
     margin: 1.5%;
   }
 }
+.main .menu .starter h2 {
+  margin-left: -20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 .main .menu .starter__object {
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px 0px;
-  padding: 0px 20px 0px 10px;
-  width: 300px;
+  margin: 0px 0px 20px -25px;
+  padding: 0px 20px 0px 5px;
+  width: 320px;
   border-radius: 20px;
+  box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .starter__object .h3 {
-  margin: 10px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 500;
 }
 .main .menu .starter__object .p {
-  margin: 0px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin: 0px 0px 10px 5px;
 }
 .main .menu .starter__object .p strong {
   position: absolute;
-  right: 10px;
+  right: 25px;
 }
 .main .menu .mainmeal {
   margin: 10px 0px 0px 40px;
@@ -367,25 +388,35 @@ footer ul i {
     margin: 1.5%;
   }
 }
+.main .menu .mainmeal h2 {
+  margin-left: -20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 .main .menu .mainmeal__object {
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px 0px;
-  padding: 0px 20px 0px 10px;
-  width: 300px;
+  margin: 0px 0px 20px -25px;
+  padding: 0px 20px 0px 5px;
+  width: 320px;
   border-radius: 20px;
+  box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .mainmeal__object .h3 {
-  margin: 10px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 500;
 }
 .main .menu .mainmeal__object .p {
-  margin: 0px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin: 0px 0px 10px 5px;
 }
 .main .menu .mainmeal__object .p strong {
   position: absolute;
-  right: 10px;
+  right: 25px;
 }
 .main .menu .dessert {
   margin: 10px 0px 0px 40px;
@@ -397,36 +428,47 @@ footer ul i {
     margin: 1.5%;
   }
 }
+.main .menu .dessert h2 {
+  margin-left: -20px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 .main .menu .dessert__object {
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px 0px;
-  padding: 0px 20px 0px 10px;
-  width: 300px;
+  margin: 0px 0px 20px -25px;
+  padding: 0px 20px 0px 5px;
+  width: 320px;
   border-radius: 20px;
+  box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .dessert__object .h3 {
-  margin: 10px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 500;
 }
 .main .menu .dessert__object .p {
-  margin: 0px 0px 10px 10px;
+  margin: 10px 0px 10px 5px;
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin: 0px 0px 10px 5px;
 }
 .main .menu .dessert__object .p strong {
   position: absolute;
-  right: 10px;
+  right: 25px;
 }
 .main .menu .order {
   display: flex;
   align-items: center;
-  padding: 0px 0px 0px 20px;
+  align-content: justify;
+  justify-content: center;
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
-  width: 100px;
-  height: 40px;
-  margin: 40px 0px 40px 140px;
+  width: 200px;
+  height: 50px;
+  margin: 40px 0px 30px 90px;
 }
 @media screen and (min-width: 768px) {
   .main .menu .order {
