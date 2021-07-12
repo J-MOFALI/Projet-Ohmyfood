@@ -312,6 +312,7 @@ footer ul i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .main .menu h1 {
@@ -334,19 +335,12 @@ footer ul i {
 }
 @media screen and (min-width: 768px) {
   .main .menu h1 i {
-    right: 530px;
+    right: 30%;
     top: 32px;
   }
 }
 .main .menu .starter {
   margin: 10px 0px 0px 40px;
-}
-@media screen and (min-width: 768px) {
-  .main .menu .starter {
-    width: 30%;
-    height: 60%;
-    margin: 1.5%;
-  }
 }
 .main .menu .starter h2 {
   margin-left: -20px;
@@ -381,13 +375,6 @@ footer ul i {
 .main .menu .mainmeal {
   margin: 10px 0px 0px 40px;
 }
-@media screen and (min-width: 768px) {
-  .main .menu .mainmeal {
-    width: 30%;
-    height: 60%;
-    margin: 1.5%;
-  }
-}
 .main .menu .mainmeal h2 {
   margin-left: -20px;
   font-weight: 300;
@@ -420,13 +407,6 @@ footer ul i {
 }
 .main .menu .dessert {
   margin: 10px 0px 0px 40px;
-}
-@media screen and (min-width: 768px) {
-  .main .menu .dessert {
-    width: 30%;
-    height: 60%;
-    margin: 1.5%;
-  }
 }
 .main .menu .dessert h2 {
   margin-left: -20px;
@@ -473,10 +453,8 @@ footer ul i {
 @media screen and (min-width: 768px) {
   .main .menu .order {
     width: 100%;
-    text-align: center;
     width: 60%;
     margin: 2% 20% 4% 20%;
-    padding: 2% 0% 2% 27%;
   }
 }
 
