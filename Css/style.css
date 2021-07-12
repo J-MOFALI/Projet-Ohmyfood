@@ -316,7 +316,7 @@ footer ul i {
   }
 }
 .main .menu h1 {
-  margin: 30px 0px 0px 20px;
+  margin: 30px 0px 30px 20px;
   width: 80%;
   font-family: "Shrikhand", sans-serif;
   font-size: 1.5rem;
@@ -340,12 +340,21 @@ footer ul i {
   }
 }
 .main .menu .starter {
-  margin: 10px 0px 0px 40px;
+  margin: 10px 0px 15px 40px;
 }
-.main .menu .starter h2 {
+.main .menu .starter .h2 {
+  display: flex;
+  flex-direction: column;
   margin-left: -20px;
   font-weight: 300;
   font-size: 1.2rem;
+}
+.main .menu .starter .h2 .line {
+  width: 45px;
+  height: 4px;
+  border-radius: 2px;
+  background: #99E2D0;
+  margin-bottom: 10px;
 }
 .main .menu .starter__object {
   display: flex;
@@ -375,10 +384,19 @@ footer ul i {
 .main .menu .mainmeal {
   margin: 10px 0px 0px 40px;
 }
-.main .menu .mainmeal h2 {
+.main .menu .mainmeal .h2 {
+  display: flex;
+  flex-direction: column;
   margin-left: -20px;
   font-weight: 300;
   font-size: 1.2rem;
+}
+.main .menu .mainmeal .h2 .line {
+  width: 45px;
+  height: 4px;
+  border-radius: 2px;
+  background: #99E2D0;
+  margin-bottom: 10px;
 }
 .main .menu .mainmeal__object {
   display: flex;
@@ -408,10 +426,19 @@ footer ul i {
 .main .menu .dessert {
   margin: 10px 0px 0px 40px;
 }
-.main .menu .dessert h2 {
+.main .menu .dessert .h2 {
+  display: flex;
+  flex-direction: column;
   margin-left: -20px;
   font-weight: 300;
   font-size: 1.2rem;
+}
+.main .menu .dessert .h2 .line {
+  width: 45px;
+  height: 4px;
+  border-radius: 2px;
+  background: #99E2D0;
+  margin-bottom: 10px;
 }
 .main .menu .dessert__object {
   display: flex;
