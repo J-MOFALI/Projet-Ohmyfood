@@ -1,9 +1,12 @@
-@import "./Util/maps.scss", "./Util/keyframes.scss",
+@import "./Util/maps.scss",
+"./Util/keyframes.scss",
 "./Util/mixins.scss";
-@import "./Layout/loader.scss", "./Layout/header.scss",
+@import "./Layout/loader.scss",
+"./Layout/header.scss",
 "./Layout/footer.scss",
 "./Layout/explore.scss",
 "./Layout/running.scss",
 "./Layout/restaurant.scss",
 "./Layout/resto.scss",
 "./Layout/body.scss";
+@import "./Components/heart.scss"

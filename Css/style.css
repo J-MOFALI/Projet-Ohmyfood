@@ -23,6 +23,17 @@
     opacity: 0;
   }
 }
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
   display: flex;
   flex-direction: column;
@@ -35,7 +46,10 @@
   font-family: "Shrikhand", sans-serif;
   font-size: 1.3rem;
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: 20;
+  pointer-events: none;
   animation: loader 1s ease-in-out 6s forwards;
 }
 .loader .moi {
@@ -327,21 +341,6 @@ footer ul i {
   font-weight: 100;
   font-size: 1.2rem;
 }
-.restaurant .picture__description__coeur {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  font-size: 1.7rem;
-  color: #6b6b6b;
-}
-.restaurant .picture__description__coeur::before {
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-.restaurant .picture__description__coeur:hover::before {
-  color: linear-gradient(#FF79DA, #9356DC);
-  cursor: pointer;
-}
 
 .main {
   display: flex;
@@ -562,6 +561,29 @@ h1,
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+.heart {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 1.7rem;
+  color: #6b6b6b;
+  cursor: pointer;
+}
+
+.heart {
+  color: black;
+  cursor: pointer;
+}
+.heart:hover {
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
