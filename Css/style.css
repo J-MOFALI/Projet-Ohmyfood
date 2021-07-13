@@ -1,21 +1,26 @@
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(Odeg);
-    transform: rotate(Odeg);
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    -webkit-transform: rotate(36Odeg);
-    transform: rotate(36Odeg);
+  to {
+    transform: rotate(360deg);
   }
 }
-@-webkit-keyframes spinreverse {
+@keyframes loader {
   0% {
-    -webkit-transform: rotate(36Odeg);
-    transform: rotate(36Odeg);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.2;
   }
   100% {
-    -webkit-transform: rotate(Odeg);
-    transform: rotate(Odeg);
+    opacity: 0;
   }
 }
 .loader {
@@ -26,17 +31,21 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(#99E2D0, #9356DC);
-  color: #99E2D0;
+  color: rgba(255, 255, 255, 0.4);
   font-family: "Shrikhand", sans-serif;
+  font-size: 1.3rem;
+  position: fixed;
+  z-index: 20;
+  animation: loader 1s ease-in-out 6s forwards;
 }
 .loader .moi {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.4);
 }
 .loader .moi:after {
@@ -46,15 +55,10 @@
   bottom: -6px;
   right: -6px;
   left: -6px;
-  border-radius: 50px;
+  border-radius: 50%;
   border: 6px solid transparent;
   border-top-color: #FF79DA;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-}
-.loader .moi:after i {
-  -webkit-animation: spinreverse 1s linear infinite;
-  animation: spinreverse 1s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 .header {
@@ -182,14 +186,13 @@ footer ul i {
   display: flex;
   flex-direction: columns;
   align-content: center;
-  width: 270px;
   border: 1px solid #eeeeee;
   border-radius: 20px;
   padding: 20px;
   background-color: #fafafa;
   color: white;
   position: relative;
-  margin: 0px 0px 20px 30px;
+  margin: 0px 30px 20px 30px;
   box-shadow: 10px 5px 15px #eeeeee;
 }
 @media screen and (min-width: 768px) {
@@ -255,8 +258,7 @@ footer ul i {
 }
 .restaurant .picture {
   position: relative;
-  width: 320px;
-  margin: 5px 0px 30px 25px;
+  margin: 5px 25px 30px 25px;
   height: 230px;
   box-shadow: 10px 10px 15px #F2F2F2;
   color: black;
@@ -265,7 +267,7 @@ footer ul i {
 @media screen and (min-width: 768px) {
   .restaurant .picture {
     width: 40%;
-    height: 500px;
+    height: 400px;
     margin: 0px 5% 40px 5%;
   }
 }
@@ -275,11 +277,15 @@ footer ul i {
   height: 70%;
   border-radius: 15px 15px 0px 0px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant .picture__chiche {
+    height: 80%;
+  }
+}
 .restaurant .picture__new {
   padding: 5px;
   color: #99E2D0;
   background-color: #c1ede2;
-  width: 60px;
   height: 20px;
   position: absolute;
   top: 10px;
@@ -290,12 +296,11 @@ footer ul i {
   .restaurant .picture__new {
     top: 5%;
     right: 5%;
-    width: 20%;
     height: 10%;
     display: flex;
     align-items: center;
-    text-align: center;
-    padding-left: 10%;
+    justify-content: center;
+    padding: 2%;
   }
 }
 .restaurant .picture__description {
@@ -306,6 +311,11 @@ footer ul i {
   background-color: white;
   border-radius: 0px 0px 15px 15px;
   margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant .picture__description {
+    height: 20%;
+  }
 }
 .restaurant .picture__description h2 {
   margin: 10px 0px 0px 10px;
@@ -420,20 +430,20 @@ footer ul i {
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px -25px;
+  margin: 0px 15px 20px -25px;
   padding: 0px 20px 0px 5px;
-  width: 320px;
   border-radius: 20px;
   box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .starter__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 .main .menu .starter__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin: 0px 0px 10px 5px;
 }
 .main .menu .starter__object .p strong {
@@ -441,7 +451,7 @@ footer ul i {
   right: 25px;
 }
 .main .menu .mainmeal {
-  margin: 10px 0px 0px 40px;
+  margin: 10px 0px 15px 40px;
 }
 .main .menu .mainmeal .h2 {
   display: flex;
@@ -462,20 +472,20 @@ footer ul i {
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px -25px;
+  margin: 0px 15px 20px -25px;
   padding: 0px 20px 0px 5px;
-  width: 320px;
   border-radius: 20px;
   box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .mainmeal__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 .main .menu .mainmeal__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin: 0px 0px 10px 5px;
 }
 .main .menu .mainmeal__object .p strong {
@@ -483,7 +493,7 @@ footer ul i {
   right: 25px;
 }
 .main .menu .dessert {
-  margin: 10px 0px 0px 40px;
+  margin: 10px 0px 15px 40px;
 }
 .main .menu .dessert .h2 {
   display: flex;
@@ -504,20 +514,20 @@ footer ul i {
   flex-direction: column;
   position: relative;
   background-color: white;
-  margin: 0px 0px 20px -25px;
+  margin: 0px 15px 20px -25px;
   padding: 0px 20px 0px 5px;
-  width: 320px;
   border-radius: 20px;
   box-shadow: 10px 5px 15px #d9d9d9;
 }
 .main .menu .dessert__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
+  font-size: 1.1rem;
 }
 .main .menu .dessert__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin: 0px 0px 10px 5px;
 }
 .main .menu .dessert__object .p strong {
@@ -532,23 +542,18 @@ footer ul i {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
-  width: 200px;
   height: 50px;
-  margin: 40px 0px 30px 90px;
+  margin: 20px 80px 20px 80px;
 }
 @media screen and (min-width: 768px) {
   .main .menu .order {
-    width: 100%;
-    width: 60%;
-    margin: 2% 20% 4% 20%;
+    width: 40%;
+    margin: 2% 30% 4% 30%;
   }
 }
 
 body {
   margin: auto;
-  max-width: 1500px;
-  margin: auto;
-  max-width: 1500px;
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
