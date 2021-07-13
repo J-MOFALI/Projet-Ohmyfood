@@ -34,24 +34,17 @@
     opacity: 1;
   }
 }
-@keyframes fadein {
+@keyframes fadeUp {
   0% {
     opacity: 0;
   }
-  90% {
-    opacity: 0.5;
-  }
-  95% {
-    opacity: 0.7;
-  }
-  98% {
-    opacity: 0.8;
-  }
-  99% {
-    opacity: 0.9;
+  50% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
   100% {
     opacity: 1;
+    transform: none;
   }
 }
 .loader {
@@ -606,19 +599,19 @@ h2 {
 }
 
 .one {
-  animation: fadein linear 1s forwards;
+  animation: fadeUp linear 1s forwards;
 }
 
 .two {
-  animation: fadein linear 1.2s forwards;
+  animation: fadeUp linear 1.2s forwards;
 }
 
 .three {
-  animation: fadein linear 1.4s forwards;
+  animation: fadeUp linear 1.4s forwards;
 }
 
 .four {
-  animation: fadein linear 1.6s forwards;
+  animation: fadeUp linear 1.6s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
