@@ -14,7 +14,7 @@
     top: 0;
     z-index: 20;
     pointer-events: none;
-    animation: loader 1s ease-in-out 6s forwards;
+    animation: loader 1s ease-in-out 2s forwards;
     .moi {
         display: flex;
         align-items: center;
@@ -35,6 +35,6 @@
         border-radius: 50%;
         border: 6px solid transparent;
         border-top-color: #FF79DA;
-        animation: spin 3s linear infinite;
+        animation: spin 2s linear infinite;
     }
 }
