@@ -3,6 +3,9 @@
     flex-direction: column;
     position: relative;
     height: 1480px;
+    @include tablet-only {
+        box-shadow: inset 0px 25px 25px 0px #dddddd;
+    }
     .picture {
         display: flex;
         flex-direction: column;
@@ -60,9 +63,8 @@
         .starter {
             margin: 10px 0px 15px 40px;
             @include tablet-only {
-                width: 25%;
-                text-align: center;
-                margin: 30px 5% 0px 5%;
+                width: 75%;
+                margin: 30px 7.5% 0px 7.5%;
             }
             .h2 {
                 display: flex;
@@ -96,18 +98,27 @@
                     align-items: center;
                     padding-top: 29px;
                     margin-right: 10px;
+                    @include tablet-only {
+                        padding-top: 20px;
+                    }
                 }
                 & .h3 {
                     margin: 10px 0px 10px 5px;
                     font-weight: 500;
                     font-size: 1rem;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .p {
                     margin: 10px 0px 10px 5px;
                     font-weight: 300;
-                    font-size: 1rem;
+                    font-size: 0.85rem;
                     margin: 0px 0px 10px 5px;
                     right: 20px;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .check {
                     display: none;
@@ -122,15 +133,24 @@
                 & .h3 {
                     overflow: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis
+                    text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .p {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .price {
                     width: 25%;
+                    @include tablet-only {
+                        padding-top: 29px;
+                    }
                 }
                 & .check {
                     display: flex;
@@ -155,9 +175,8 @@
         .mainmeal {
             margin: 10px 0px 15px 40px;
             @include tablet-only {
-                width: 25%;
-                text-align: center;
-                margin: 30px 5% 0px 5%;
+                width: 30%;
+                margin: 30px 7.5% 0px 7.5%;
             }
             .h2 {
                 display: flex;
@@ -191,18 +210,27 @@
                     align-items: center;
                     padding-top: 29px;
                     margin-right: 10px;
+                    @include tablet-only {
+                        padding-top: 20px;
+                    }
                 }
                 & .h3 {
                     margin: 10px 0px 10px 5px;
                     font-weight: 500;
                     font-size: 1rem;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .p {
                     margin: 10px 0px 10px 5px;
                     font-weight: 300;
-                    font-size: 1rem;
+                    font-size: 0.85rem;
                     margin: 0px 0px 10px 5px;
                     right: 20px;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .check {
                     display: none;
@@ -217,15 +245,24 @@
                 & .h3 {
                     overflow: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis
+                    text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .p {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .price {
                     width: 25%;
+                    @include tablet-only {
+                        padding-top: 29px;
+                    }
                 }
                 & .check {
                     display: flex;
@@ -250,9 +287,8 @@
         .dessert {
             margin: 10px 0px 15px 40px;
             @include tablet-only {
-                width: 25%;
-                text-align: center;
-                margin: 30px 5% 0px 5%;
+                width: 30%;
+                margin: 30px 7.5% 0px 7.5%;
             }
             .h2 {
                 display: flex;
@@ -286,18 +322,27 @@
                     align-items: center;
                     padding-top: 29px;
                     margin-right: 10px;
+                    @include tablet-only {
+                        padding-top: 20px;
+                    }
                 }
                 & .h3 {
                     margin: 10px 0px 10px 5px;
                     font-weight: 500;
                     font-size: 1rem;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .p {
                     margin: 10px 0px 10px 5px;
                     font-weight: 300;
-                    font-size: 1rem;
+                    font-size: 0.85rem;
                     margin: 0px 0px 10px 5px;
                     right: 20px;
+                    @include tablet-only {
+                        font-size: 0.7rem;
+                    }
                 }
                 & .check {
                     display: none;
@@ -312,15 +357,24 @@
                 & .h3 {
                     overflow: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis
+                    text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .p {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    @include tablet-only {
+                        font-size: 1rem;
+                    }
                 }
                 & .price {
                     width: 25%;
+                    @include tablet-only {
+                        padding-top: 29px;
+                    }
                 }
                 & .check {
                     display: flex;
@@ -355,6 +409,8 @@
             @include tablet-only {
                 width: 40%;
                 margin: 2% 30% 4% 30%;
+                max-width: 500px;
+                margin: auto;
             }
         }
     }

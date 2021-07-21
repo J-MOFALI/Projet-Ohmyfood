@@ -182,8 +182,8 @@ footer ul i {
   margin: 10px 0px 10px 0px;
 }
 .explore__text2 {
-  font-weight: 200;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 1.1rem;
   text-align: center;
   margin: 10px 0px 10px 0px;
 }
@@ -205,6 +205,7 @@ footer ul i {
   width: 100%;
   height: 30px;
   text-align: center;
+  font-weight: 500;
   padding-top: 10px;
   color: #404040;
   box-shadow: inset 0px 5px 5px 0px #dddddd;
@@ -213,6 +214,10 @@ footer ul i {
   margin-right: 15px;
 }
 
+.running {
+  max-width: 1500px;
+  margin: auto;
+}
 @media screen and (min-width: 768px) {
   .running {
     display: flex;
@@ -223,6 +228,7 @@ footer ul i {
 }
 .running h1 {
   margin-left: 25px;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .running h1 {
@@ -279,6 +285,49 @@ footer ul i {
   color: black;
   font-weight: 400;
 }
+.running .btn--color {
+  display: flex;
+  flex-direction: columns;
+  align-content: center;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #f7f2fc;
+  color: white;
+  position: relative;
+  margin: 0px 30px 20px 30px;
+  box-shadow: 10px 5px 15px #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .running .btn--color {
+    width: 25%;
+    margin: auto;
+  }
+}
+.running .btn--color__figure {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 0.8rem;
+  padding: 5px 5px 5px 6.5px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  position: absolute;
+  left: -10px;
+  bottom: 33%;
+  width: 10px;
+  height: 10px;
+}
+.running .btn--color__icon--lighten {
+  margin: 0px 20px 0px 20px;
+  width: 15px;
+  height: 20px;
+  color: #9356DC;
+}
+.running .btn--color__text {
+  color: black;
+  font-weight: 400;
+}
 
 .restaurant {
   display: flex;
@@ -287,6 +336,8 @@ footer ul i {
   height: auto;
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .restaurant {
@@ -297,6 +348,8 @@ footer ul i {
 }
 .restaurant h1 {
   padding: 20px 0px 0px 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .restaurant h1 {
@@ -331,14 +384,14 @@ footer ul i {
   }
 }
 .restaurant .picture__new {
-  padding: 5px;
-  color: #99E2D0;
-  background-color: #c1ede2;
+  padding: 7px;
+  font-weight: 700;
+  color: #217460;
+  background-color: #7ddac3;
   height: 20px;
   position: absolute;
   top: 10px;
   right: 10px;
-  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .restaurant .picture__new {
@@ -372,7 +425,7 @@ footer ul i {
 }
 .restaurant .picture__description p {
   margin: 0px 0px 0px 10px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.2rem;
 }
 
@@ -381,6 +434,11 @@ footer ul i {
   flex-direction: column;
   position: relative;
   height: 1480px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    box-shadow: inset 0px 25px 25px 0px #dddddd;
+  }
 }
 .main .picture {
   display: flex;
@@ -450,9 +508,8 @@ footer ul i {
 }
 @media screen and (min-width: 768px) {
   .main .menu .starter {
-    width: 25%;
-    text-align: center;
-    margin: 30px 5% 0px 5%;
+    width: 75%;
+    margin: 30px 7.5% 0px 7.5%;
   }
 }
 .main .menu .starter .h2 {
@@ -489,17 +546,32 @@ footer ul i {
   padding-top: 29px;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object .price {
+    padding-top: 20px;
+  }
+}
 .main .menu .starter__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object .h3 {
+    font-size: 0.7rem;
+  }
+}
 .main .menu .starter__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin: 0px 0px 10px 5px;
   right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object .p {
+    font-size: 0.7rem;
+  }
 }
 .main .menu .starter__object .check {
   display: none;
@@ -516,13 +588,28 @@ footer ul i {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object:hover .h3 {
+    font-size: 1rem;
+  }
+}
 .main .menu .starter__object:hover .p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object:hover .p {
+    font-size: 1rem;
+  }
+}
 .main .menu .starter__object:hover .price {
   width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .starter__object:hover .price {
+    padding-top: 29px;
+  }
 }
 .main .menu .starter__object:hover .check {
   display: flex;
@@ -547,9 +634,8 @@ footer ul i {
 }
 @media screen and (min-width: 768px) {
   .main .menu .mainmeal {
-    width: 25%;
-    text-align: center;
-    margin: 30px 5% 0px 5%;
+    width: 30%;
+    margin: 30px 7.5% 0px 7.5%;
   }
 }
 .main .menu .mainmeal .h2 {
@@ -586,17 +672,32 @@ footer ul i {
   padding-top: 29px;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object .price {
+    padding-top: 20px;
+  }
+}
 .main .menu .mainmeal__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object .h3 {
+    font-size: 0.7rem;
+  }
+}
 .main .menu .mainmeal__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin: 0px 0px 10px 5px;
   right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object .p {
+    font-size: 0.7rem;
+  }
 }
 .main .menu .mainmeal__object .check {
   display: none;
@@ -613,13 +714,28 @@ footer ul i {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object:hover .h3 {
+    font-size: 1rem;
+  }
+}
 .main .menu .mainmeal__object:hover .p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object:hover .p {
+    font-size: 1rem;
+  }
+}
 .main .menu .mainmeal__object:hover .price {
   width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .mainmeal__object:hover .price {
+    padding-top: 29px;
+  }
 }
 .main .menu .mainmeal__object:hover .check {
   display: flex;
@@ -644,9 +760,8 @@ footer ul i {
 }
 @media screen and (min-width: 768px) {
   .main .menu .dessert {
-    width: 25%;
-    text-align: center;
-    margin: 30px 5% 0px 5%;
+    width: 30%;
+    margin: 30px 7.5% 0px 7.5%;
   }
 }
 .main .menu .dessert .h2 {
@@ -683,17 +798,32 @@ footer ul i {
   padding-top: 29px;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object .price {
+    padding-top: 20px;
+  }
+}
 .main .menu .dessert__object .h3 {
   margin: 10px 0px 10px 5px;
   font-weight: 500;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object .h3 {
+    font-size: 0.7rem;
+  }
+}
 .main .menu .dessert__object .p {
   margin: 10px 0px 10px 5px;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin: 0px 0px 10px 5px;
   right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object .p {
+    font-size: 0.7rem;
+  }
 }
 .main .menu .dessert__object .check {
   display: none;
@@ -710,13 +840,28 @@ footer ul i {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object:hover .h3 {
+    font-size: 1rem;
+  }
+}
 .main .menu .dessert__object:hover .p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object:hover .p {
+    font-size: 1rem;
+  }
+}
 .main .menu .dessert__object:hover .price {
   width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .main .menu .dessert__object:hover .price {
+    padding-top: 29px;
+  }
 }
 .main .menu .dessert__object:hover .check {
   display: flex;
@@ -751,6 +896,8 @@ footer ul i {
   .main .menu .order {
     width: 40%;
     margin: 2% 30% 4% 30%;
+    max-width: 500px;
+    margin: auto;
   }
 }
 
@@ -774,7 +921,7 @@ h2 {
 .heart {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 15px;
   font-size: 1.7rem;
   color: #6b6b6b;
 }
