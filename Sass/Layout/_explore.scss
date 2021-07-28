@@ -40,6 +40,16 @@
     color: darken(grey, 25);
     box-shadow: inset 0px 5px 5px 0px #dddddd;
     i {
-        margin-right: 15px;
+        margin-right: 0px;
+    }
+    input {
+        text-align: center;
+        border: transparent;
+        background-color: lighten(grey, 40);
+        padding: 0px;
+        width: auto;
+        padding-left: 0px;
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
