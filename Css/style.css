@@ -104,7 +104,7 @@
 
 .header {
   text-align: center;
-  font-family: "shirkand" sans-serif;
+  font-family: "shirkand", sans-serif;
   font-size: 1.7rem;
   height: 20px;
   padding: 10px 0px 20px 0px;
@@ -112,11 +112,11 @@
 
 .header_resto {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   position: relative;
   height: 60px;
   align-items: center;
-  font-family: "shirkand" sans-serif;
+  font-family: "shirkand", sans-serif;
   font-size: 1.7rem;
 }
 .header_resto img {
@@ -248,7 +248,7 @@ footer ul i {
 }
 .running .btn {
   display: flex;
-  flex-direction: columns;
+  flex-direction: row;
   align-content: center;
   border: 1px solid #eeeeee;
   border-radius: 20px;
@@ -851,7 +851,7 @@ footer ul i {
 .main .menu .order {
   display: flex;
   align-items: center;
-  align-content: justify;
+  align-content: center;
   justify-content: center;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);

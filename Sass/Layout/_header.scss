@@ -1,6 +1,6 @@
 .header {
     text-align: center;
-    font-family: "shirkand" sans-serif;
+    font-family: "shirkand", sans-serif;
     font-size: 1.7rem;
     height: 20px;
     padding: 10px 0px 20px 0px;
@@ -8,11 +8,11 @@
 
 .header_resto {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     position: relative;
     height: 60px;
     align-items: center;
-    font-family: "shirkand" sans-serif;
+    font-family: "shirkand", sans-serif;
     font-size: 1.7rem;
     img {
         position: absolute;
