@@ -38,6 +38,7 @@
             width: 100%;
             height: 70%;
             border-radius: 15px 15px 0px 0px;
+            object-fit: cover;
             @include tablet-only {
                 height: 80%;
             }
@@ -69,6 +70,7 @@
             background-color: white;
             border-radius: 0px 0px 15px 15px;
             margin: 0px;
+            color: black;
             @include tablet-only {
                 height: 20%;
             }

@@ -52,12 +52,8 @@
     width: 0%;
     opacity: 0%;
   }
-  20% {
-    width: 5%;
-    opacity: 1;
-  }
-  40% {
-    width: 10%;
+  60% {
+    width: 15%;
     opacity: 1;
   }
   80% {
@@ -352,6 +348,7 @@ footer ul i {
   width: 100%;
   height: 70%;
   border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .restaurant .picture__chiche {
@@ -387,6 +384,7 @@ footer ul i {
   background-color: white;
   border-radius: 0px 0px 15px 15px;
   margin: 0px;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .restaurant .picture__description {
@@ -424,6 +422,7 @@ footer ul i {
 .main .picture img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .main .picture {
@@ -550,7 +549,7 @@ footer ul i {
 }
 .main .menu .starter__object .check {
   display: none;
-  animation: slide-left 200ms ease-in-out forwards;
+  animation: slide-left 800ms ease-in-out forwards;
 }
 .main .menu .starter__object:hover {
   cursor: pointer;
@@ -601,8 +600,9 @@ footer ul i {
 }
 .main .menu .starter__object:hover .check i {
   display: block;
+  font-size: 1.5rem;
   color: white;
-  animation: spin 400ms linear 1;
+  animation: spin 500ms linear 1;
 }
 .main .menu .mainmeal {
   margin: 10px 0px 15px 40px;
@@ -676,7 +676,7 @@ footer ul i {
 }
 .main .menu .mainmeal__object .check {
   display: none;
-  animation: slide-left 200ms ease-in-out forwards;
+  animation: slide-left 800ms ease-in-out forwards;
 }
 .main .menu .mainmeal__object:hover {
   cursor: pointer;
@@ -727,8 +727,9 @@ footer ul i {
 }
 .main .menu .mainmeal__object:hover .check i {
   display: block;
+  font-size: 1.5rem;
   color: white;
-  animation: spin 400ms linear 1;
+  animation: spin 500ms linear 1;
 }
 .main .menu .dessert {
   margin: 10px 0px 15px 40px;
@@ -802,7 +803,7 @@ footer ul i {
 }
 .main .menu .dessert__object .check {
   display: none;
-  animation: slide-left 200ms ease-in-out forwards;
+  animation: slide-left 800ms ease-in-out forwards;
 }
 .main .menu .dessert__object:hover {
   cursor: pointer;
@@ -853,8 +854,9 @@ footer ul i {
 }
 .main .menu .dessert__object:hover .check i {
   display: block;
+  font-size: 1.5rem;
   color: white;
-  animation: spin 400ms linear 1;
+  animation: spin 500ms linear 1;
 }
 .main .menu .order {
   display: flex;
